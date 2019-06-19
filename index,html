@@ -1,0 +1,17 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>Time Zones!!!</title>
+
+</head>
+
+<body>
+
+  <h1>Time Zones!!!</h1>
+  <input onchange="update_eric()" placeholder="6:00">
+</body>
+
+</html>
