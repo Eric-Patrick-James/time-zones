@@ -50,7 +50,7 @@
     <div class="inline">
     
       <h4>Nagiho</h4>
-      <input id="naghio_input" onchange="update_naghio()" value="21">
+      <input id="nagiho_input" onchange="update_nagiho()" value="21">
       
     </div>
     
@@ -61,7 +61,7 @@
       elizabeth_input = document.getElementById("elizabeth_input")
       sebas_input = document.getElementById("sebas_input")
       pieter_input = document.getElementById("pieter_input")
-      naghio_input = document.getElementById("naghio_input")
+      nagiho_input = document.getElementById("nagiho_input")
 
       function wrap_time(time) {
         
@@ -89,7 +89,7 @@
         elizabeth_input.value = wrap_time(hour-4).toString()
         sebas_input.value = wrap_time(hour+1).toString()
         pieter_input.value = wrap_time(hour+1).toString()
-        naghio_input.value = wrap_time(hour+9).toString()
+        nagiho_input.value = wrap_time(hour+9).toString()
 
       }
       
@@ -101,7 +101,7 @@
         elizabeth_input.value = wrap_time(hour-4).toString()
         sebas_input.value = wrap_time(hour+1).toString()
         pieter_input.value = wrap_time(hour+1).toString()
-        naghio_input.value = wrap_time(hour+9).toString()
+        nagiho_input.value = wrap_time(hour+9).toString()
 
       }
       
@@ -113,7 +113,7 @@
         fer_input.value = wrap_time(hour-6).toString()
         sebas_input.value = wrap_time(hour+1).toString()
         pieter_input.value = wrap_time(hour+1).toString()
-        naghio_input.value = wrap_time(hour+9).toString()
+        nagiho_input.value = wrap_time(hour+9).toString()
 
       }
       
@@ -125,7 +125,7 @@
         fer_input.value = wrap_time(hour-6).toString()
         elizabeth_input.value = wrap_time(hour-4).toString()
         pieter_input.value = wrap_time(hour+1).toString()
-        naghio_input.value = wrap_time(hour+9).toString()
+        nagiho_input.value = wrap_time(hour+9).toString()
 
       }
       
@@ -137,13 +137,13 @@
         fer_input.value = wrap_time(hour-6).toString()
         elizabeth_input.value = wrap_time(hour-4).toString()
         sebas_input.value = wrap_time(hour+1).toString()
-        naghio_input.value = wrap_time(hour+9).toString()
+        nagiho_input.value = wrap_time(hour+9).toString()
 
       }
       
-      function update_naghio() {
+      function update_nagiho() {
 
-        var hour = Number(naghio_input.value)-9
+        var hour = Number(nagiho_input.value)-9
         
         eric_input.value = wrap_time(hour-6).toString()
         fer_input.value = wrap_time(hour-6).toString()
