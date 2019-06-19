@@ -1,18 +1,18 @@
 body {
   
-        background-color: rgb(234, 131, 222);
+  background-color: rgb(234, 131, 222);
   
-      }
+}
       
-      h1 {
+h1 {
         
-        text-align: center;
+  text-align: center;
         
-      }
+}
       
-      .inline {
+.inline {
         
-        display: inline-block;
-        width: 16%;
+  display: inline-block;
+  width: 16%;
          
-      }
+}
