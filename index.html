@@ -50,7 +50,7 @@
     <div class="inline">
     
       <h4>Nagiho</h4>
-      <input id="hagiho_input" onchange="update_nagiho()" value="21">
+      <input id="naghio_input" onchange="update_nagiho()" value="21">
       
     </div>
     
@@ -63,15 +63,33 @@
       pieter_input = document.getElementById("pieter_input")
       naghio_input = document.getElementById("naghio_input")
 
+      function wrap_time(time) {
+        
+        while (time > 24) {
+          
+         time = time - 24 
+          
+        }
+        
+        while (time < 0) {
+          
+         time = time + 24 
+          
+        }
+        
+        return time
+        
+      }
+      
       function update_eric() {
 
         var hour = Number(eric_input.value)
 
-        fer_input.value = toString(hour-6)
-        elizabeth_input.value = toString(hour-4)
-        sebas_input.value = toString(hour+1)
-        pieter_input.value = toString(hour+1)
-        naghio_input.value = toString(hour+9)
+        fer_input.value = toString(wrap_time(hour-6))
+        elizabeth_input.value = toString(wrap_time(hour-4))
+        sebas_input.value = toString(wrap_time(hour+1))
+        pieter_input.value = toString(wrap_time(hour+1))
+        naghio_input.value = toString(wrap_time(hour+9))
 
       }
       
