@@ -1,47 +1,96 @@
+      eric_input = document.getElementById("eric_input")
+      fer_input = document.getElementById("fer_input")
+      elizabeth_input = document.getElementById("elizabeth_input")
+      sebas_input = document.getElementById("sebas_input")
+      pieter_input = document.getElementById("pieter_input")
+      nagiho_input = document.getElementById("nagiho_input")
 
-eric_input = document.getElementById("eric_input")
-fer_input = document.getElementById("fer_input")
-elizabeth_input = document.getElementById("elizabeth_input")
-sebas_input = document.getElementById("sebas_input")
-pieter_input = document.getElementById("pieter_input")
-naghio_input = document.getElementById("naghio_input")
+      function wrap_time(time) {
+        
+        while (time > 24) {
+          
+         time = time - 24 
+          
+        }
+        
+        while (time < 0) {
+          
+         time = time + 24 
+          
+        }
+        
+        return time
+        
+      }
+      
+      function update_eric() {
 
-function time_to_number(time) {
-  
-  var index = time.indexOf(":")
-  
-  return Number(time.slice(0, index)), Number(time.slice(index+1))
-  
-}
+        var hour = Number(eric_input.value)+6
+        
+        fer_input.value = wrap_time(hour-6).toString()
+        elizabeth_input.value = wrap_time(hour-4).toString()
+        sebas_input.value = wrap_time(hour+1).toString()
+        pieter_input.value = wrap_time(hour+1).toString()
+        nagiho_input.value = wrap_time(hour+9).toString()
 
-function number_to_time(hour, minute) {
-  
-  while (hour > 24) {
-    
-    hour = hour - 24
-    
-  }
-  
-  while (hour < 0) {
-    
-    hour = hour + 24
-    
-  }
-  
-  return hour.toString() + ":" + minute.toString()
-  
-}
+      }
+      
+      function update_fer() {
 
-function update_eric() {
-  
-  var hour, minute = time_to_number(eric_input.value)
-  hour = hour + 6
-  minute = minute + 6
-  
-  fer_input.value = number_to_time(hour-6, minute)
-  elizabeth_input.value = number_to_time(hour-4, minute)
-  sebas_input.value = number_to_time(hour+1, minute)
-  pieter_input.value = number_to_time(hour+1, minute)
-  naghio_input.value = number_to_time(hour+9, minute-6)
-  
-}
+        var hour = Number(fer_input.value)+6
+        
+        eric_input.value = wrap_time(hour-6).toString()
+        elizabeth_input.value = wrap_time(hour-4).toString()
+        sebas_input.value = wrap_time(hour+1).toString()
+        pieter_input.value = wrap_time(hour+1).toString()
+        nagiho_input.value = wrap_time(hour+9).toString()
+
+      }
+      
+      function update_elizabeth() {
+
+        var hour = Number(elizabeth_input.value)+4
+        
+        eric_input.value = wrap_time(hour-6).toString()
+        fer_input.value = wrap_time(hour-6).toString()
+        sebas_input.value = wrap_time(hour+1).toString()
+        pieter_input.value = wrap_time(hour+1).toString()
+        nagiho_input.value = wrap_time(hour+9).toString()
+
+      }
+      
+      function update_sebas() {
+
+        var hour = Number(sebas_input.value)-1
+        
+        eric_input.value = wrap_time(hour-6).toString()
+        fer_input.value = wrap_time(hour-6).toString()
+        elizabeth_input.value = wrap_time(hour-4).toString()
+        pieter_input.value = wrap_time(hour+1).toString()
+        nagiho_input.value = wrap_time(hour+9).toString()
+
+      }
+      
+      function update_pieter() {
+
+        var hour = Number(pieter_input.value)-1
+        
+        eric_input.value = wrap_time(hour-6).toString()
+        fer_input.value = wrap_time(hour-6).toString()
+        elizabeth_input.value = wrap_time(hour-4).toString()
+        sebas_input.value = wrap_time(hour+1).toString()
+        nagiho_input.value = wrap_time(hour+9).toString()
+
+      }
+      
+      function update_nagiho() {
+
+        var hour = Number(nagiho_input.value)-9
+        
+        eric_input.value = wrap_time(hour-6).toString()
+        fer_input.value = wrap_time(hour-6).toString()
+        elizabeth_input.value = wrap_time(hour-4).toString()
+        sebas_input.value = wrap_time(hour+1).toString()
+        pieter_input.value = wrap_time(hour+1).toString()
+
+      }
