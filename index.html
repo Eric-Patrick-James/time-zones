@@ -83,8 +83,8 @@
       
       function update_eric() {
 
-        var hour = Number(eric_input.value)
-        print(hour)
+        var hour = Number(eric_input.value)-6
+        
         fer_input.value = wrap_time(hour-6).toString()
         elizabeth_input.value = wrap_time(hour-4).toString()
         sebas_input.value = wrap_time(hour+1).toString()
