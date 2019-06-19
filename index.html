@@ -155,7 +155,9 @@
       
       var today = new Date()
       var hour = today.getHours()
-      timeZoneDif = today.getTimezoneOffset()/60
+      var timeZoneDif = today.getTimezoneOffset()/60
+      print(hour)
+      print(timeZoneDif)
       if (timeZoneDif == 6) {
         
         eric_input.value = hour
