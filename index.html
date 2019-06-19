@@ -93,6 +93,66 @@
 
       }
       
+      function update_fer() {
+
+        var hour = Number(fer_input.value)+6
+        
+        eric_input.value = wrap_time(hour-6).toString()
+        elizabeth_input.value = wrap_time(hour-4).toString()
+        sebas_input.value = wrap_time(hour+1).toString()
+        pieter_input.value = wrap_time(hour+1).toString()
+        naghio_input.value = wrap_time(hour+9).toString()
+
+      }
+      
+      function update_elizabeth() {
+
+        var hour = Number(elizabeth_input.value)+4
+        
+        eric_input.value = wrap_time(hour-6).toString()
+        fer_input.value = wrap_time(hour-6).toString()
+        sebas_input.value = wrap_time(hour+1).toString()
+        pieter_input.value = wrap_time(hour+1).toString()
+        naghio_input.value = wrap_time(hour+9).toString()
+
+      }
+      
+      function update_sebas() {
+
+        var hour = Number(sebas_input.value)-1
+        
+        eric_input.value = wrap_time(hour-6).toString()
+        fer_input.value = wrap_time(hour-6).toString()
+        elizabeth_input.value = wrap_time(hour-4).toString()
+        pieter_input.value = wrap_time(hour+1).toString()
+        naghio_input.value = wrap_time(hour+9).toString()
+
+      }
+      
+      function update_pieter() {
+
+        var hour = Number(pieter_input.value)-1
+        
+        eric_input.value = wrap_time(hour-6).toString()
+        fer_input.value = wrap_time(hour-6).toString()
+        elizabeth_input.value = wrap_time(hour-4).toString()
+        sebas_input.value = wrap_time(hour+1).toString()
+        naghio_input.value = wrap_time(hour+9).toString()
+
+      }
+      
+      function update_naghio() {
+
+        var hour = Number(naghio_input.value)-9
+        
+        eric_input.value = wrap_time(hour-6).toString()
+        fer_input.value = wrap_time(hour-6).toString()
+        elizabeth_input.value = wrap_time(hour-4).toString()
+        sebas_input.value = wrap_time(hour+1).toString()
+        pieter_input.value = wrap_time(hour+1).toString()
+
+      }
+      
     </script>
     
   </body>
