@@ -4,7 +4,7 @@
   <head>
 
     <link rel="stylesheet" type="text/css" href="style.css">
-    <title>Time Zones!!!</title>
+    <title>Time Zones!!!!!</title>
 
   </head>
 
@@ -22,39 +22,58 @@
     <div class="inline">
     
       <h4>Fer</h4>
-      <input id="eric_input" onchange="update_fer()" value="6">
+      <input id="fer_input" onchange="update_fer()" value="6">
       
     </div>
     
     <div class="inline">
     
       <h4>Elizabeth</h4>
-      <input id="eric_input" onchange="update_elizabeth()" value="8">
+      <input id="elizabeth_input" onchange="update_elizabeth()" value="8">
       
     </div>
     
     <div class="inline">
     
       <h4>Sebas</h4>
-      <input id="eric_input" onchange="update_sebas()" value="13">
+      <input id="sebas_input" onchange="update_sebas()" value="13">
       
     </div>
     
     <div class="inline">
     
       <h4>Pieter</h4>
-      <input id="eric_input" onchange="update_pieter()" value="13">
+      <input id="pieter_input" onchange="update_pieter()" value="13">
       
     </div>
     
     <div class="inline">
     
       <h4>Nagiho</h4>
-      <input id="eric_input" onchange="update_nagiho()" value="21">
+      <input id="hagiho_input" onchange="update_nagiho()" value="21">
       
     </div>
     
-    <script src="script.js">
+    <script>
+      
+      eric_input = document.getElementById("eric_input")
+      fer_input = document.getElementById("fer_input")
+      elizabeth_input = document.getElementById("elizabeth_input")
+      sebas_input = document.getElementById("sebas_input")
+      pieter_input = document.getElementById("pieter_input")
+      naghio_input = document.getElementById("naghio_input")\
+
+      function update_eric() {
+
+        var hour = Number(eric_input.value))
+
+        fer_input.value = toString(hour-6)
+        elizabeth_input.value = toString(hour-4
+        sebas_input.value = toString(hour+1)
+        pieter_input.value = toString(hour+1)
+        naghio_input.value = toString(hour+9)
+
+      }
       
     </script>
     
