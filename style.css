@@ -81,3 +81,17 @@ header nav ul li .active {
     color: #c5c1ff;
 
 }
+
+#count_down {
+
+    text-align: center;
+    font-size: 8em;
+
+}
+
+.big_text {
+
+    text-align: center;
+    font-size: 8em;
+
+}

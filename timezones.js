@@ -1,7 +1,7 @@
 
 function wrap_time(time) {
 
-    while (time > 24) {
+    while (time >= 24) {
 
         time = time - 24
 
